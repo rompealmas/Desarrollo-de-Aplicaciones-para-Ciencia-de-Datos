@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Visualización de Datos - Catálogo de Productos</title>
+  <!-- CDN de Chart.js -->
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 30px;
+      background-color: #f4f6f9;
+      color: #333;
+    }
+    h1 {
+      text-align: center;
+      color: #2c3e50;
+    }
+    .contenedor {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 30px;
+      justify-content: center;
+      margin-top: 20px;
+    }
+    .panel {
+      background: white;
+      padding: 20px;
+      border-radius: 8px;
+      box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+      flex: 1 1 450px;
+      max-width: 600px;
+    }
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      margin-top: 10px;
+    }
+    th, td {
+      border: 1px solid #ddd;
+      padding: 10px;
+      text-align: left;
+    }
+    th {
+      background-color: #007bff;
+      color: white;
+    }
+    tr:nth-child(even) {
+      background-color: #f9f9f9;
+    }
+  </style>
+</head>
+<body>
+
+  <h1>Panel de Visualización de Productos (Ciencia de Datos)</h1>
+
+  <div class="contenedor">
+    <!-- Panel 1: Tabla de datos en HTML -->
+    <div class="panel">
+      <h2>Listado de Productos (BD MySQL)</h2>
+      <div id="tabla-datos">
+        <table>
+          <thead>
+            <tr>
+              <th>ID</th>
+              <th>Nombre</th>
+              <th>Precio ($)</th>
+            </tr>
+          </thead>
+          <tbody id="cuerpo-tabla">
+            <!-- Filas dinámicas generadas con JS -->
+          </tbody>
+        </table>
+      </div>
+    </div>
+
+    <!-- Panel 2: Gráfica interactiva con Chart.js -->
+    <div class="panel">
+      <h2>Comparativa de Precios</h2>
+      <canvas id="miGrafica"></canvas>
+    </div>
+  </div>
+
+  <script src="app.js"></script>
+</body>
+</html>
