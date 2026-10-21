@@ -1,0 +1,12 @@
+[
+  {"nombre": "Monitor 24 pulgadas", "precio": 2500},
+  {"nombre": "Silla Ergonomica", "precio": 3200},
+  {"nombre": "Teclado RGB", "precio": 800},
+  {"nombre": "Mousepad XL", "precio": 350},
+  {"nombre": "Camara Web 1080p", "precio": 900},
+  {"nombre": "Microfono USB", "precio": 1200},
+  {"nombre": "Disco Duro 1TB", "precio": 1100},
+  {"nombre": "Memoria RAM 16GB", "precio": 1400},
+  {"nombre": "Gabinete ATX", "precio": 1600},
+  {"nombre": "Fuente de Poder 600W", "precio": 950}
+]
